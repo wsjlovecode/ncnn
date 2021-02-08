@@ -324,7 +324,7 @@ int Concat_arm::forward(const std::vector<Mat>& bottom_blobs, std::vector<Mat>& 
         size_t elemsize = bottom_blobs[0].elemsize;
         int elempack = bottom_blobs[0].elempack;
 
-        // total height
+        // total width
         int top_w = 0;
         for (size_t b = 0; b < bottom_blobs.size(); b++)
         {
